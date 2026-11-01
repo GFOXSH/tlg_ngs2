@@ -162,3 +162,59 @@
 ## 6. Правило интерпретации
 
 Адреса инструкций, размеры структур, значения ID, указатели и явно записанные значения в отчёте — прямые статические доказательства. Названия функций и модулей, основанные на строках (`CHORUS`, `DELAY`, `VOICE_PEAK`), являются сильными семантическими подсказками. Поля с register-derived значениями, helper return values и неинициализированные в локальном окне байты не получают семантического имени до отдельного dataflow/ABI анализа. Результаты статического анализа не устанавливают runtime-частоту выполнения ветвей.
+
+
+## 7. Дополнительная сверка custom Chorus/Delay с конкретным кодом C++ HLE
+
+После восстановления конкретных PS4 VoiceControl IDs `0x40001C00` и `0x40001D00` выполнена дополнительная проверка текущих `Custom.cpp` и `Ngs2Types.hpp` на том же HEAD `685e4e1d5d69c64357dd364c17de0202a89a41ed`.
+
+### 7.1. Chorus module `0x1C`: отсутствует в текущей модели
+
+IDA доказывает, что EBOOT строит для Chorus отдельный параметр:
+- ID `0x40001C00`;
+- size `0x30`;
+- payload size `0x28`;
+- scalar/SIMD значения заполняются из области `r13+0x1B0..0x1C0` и масштабируются константным вектором.
+
+В [Ngs2Types.hpp](https://github.com/GFOXSH/tlg_pc/blob/685e4e1d5d69c64357dd364c17de0202a89a41ed/port/src/ngs2/Ngs2Types.hpp) нет custom module ID `0x1C`. В [Custom.cpp](https://github.com/GFOXSH/tlg_pc/blob/685e4e1d5d69c64357dd364c17de0202a89a41ed/port/src/ngs2/Custom.cpp) `Ngs2CheckCustomRack()` принимает FILTER `0x13`, USER_FX `0x1D`, USER_FX2 `0x1F`; прочий module ID завершает проверку через `ngs2_stop`. Для voice parameter `0x40001C00` не предусмотрен handler: при custom-submixer rack он дойдёт до финального `ngs2_stop("... is not implemented")`.
+
+**Вывод:** перенос custom rack option без поддержки module ID `0x1C` всё равно не сделает Chorus рабочим. Нужны отдельная модель Chorus module и translation его PS4 0x30-byte voice parameter.
+
+### 7.2. Delay module `0x1D`: числовая коллизия с PS5 USER_FX, а не совместимость
+
+IDA напрямую подтверждает:
+- EBOOT VoiceControl ID = `0x40001D00`;
+- parameter size = `0x88` (136 bytes);
+- payload = `0x80` bytes;
+- структура содержит несколько SIMD/scalar полей и массив пар dword, число элементов определяется значением из `[r13+0x1D0]`; исходные пары расположены от `r13+0x1D8`.
+
+Текущий PS5 HLE в `Ngs2Types.hpp` также объявляет `SCE_NGS2_CUSTOM_VOICE_PARAM_USER_FX = 0x40001d00`. Это совпадение числового ID **не означает**, что payload совместим. В `Custom.cpp::Ngs2ApplyCustomParam()` значение с этим base ID направляется в `SetCustomUserFxParam()`, где оно интерпретируется как `Ngs2CustomVoiceUserFxParam`: header + callback pointer + три user-data pointer (40 bytes / `0x28`). При этом PS4 Delay parameter — другой объект размером `0x88`, а не callback descriptor.
+
+Путь C++ далее сохраняет прочитанный из payload handler и вызывает его в `Ngs2ProcessUserFx()`, если handler не равен null. Следовательно, при прямой передаче PS4 Delay параметра в этот dispatcher его поля будут ошибочно интерпретированы как function pointer/user data. Это не просто отсутствие DSP-эффекта: это потенциально небезопасная интерпретация данных и попытка вызвать значение из Delay payload как callback. До перевода параметра нельзя пропускать его через существующий USER_FX handler.
+
+**Вывод:** требуется разнести PS4 Delay и PS5 USER_FX в адаптере. Возможные варианты — перевести Delay в отдельный внутренний module/parameter ID с собственным DSP handler либо сопоставить его с эквивалентным PS5 effect API после восстановления полной семантики. Нельзя оставлять ID `0x40001D00` как сырой проходящий идентификатор.
+
+### 7.3. Влияние на порядок работ
+
+Custom-rack support нужно рассматривать как единый пакет, а не как только включение rack ID:
+1. Перевод PS4 rack option `0x4D8` в текущую PS5 custom-rack структуру.
+2. Перевод module table и назначение отдельного внутреннего ID для TLG Chorus `0x1C` и Delay `0x1D`, без конфликта с PS5 USER_FX `0x1D`.
+3. Перевод voice parameter payload для Chorus `0x30` и Delay `0x88`.
+4. Подключение реального DSP/module processing и проверка source/destination buffer/port wiring.
+5. Runtime-тест custom-rack creation, VoiceControl, process callbacks и destruction/cleanup.
+
+Пока пункты 1–3 не реализованы, нельзя считать `0x4002` адаптированным даже при успешном `RackQueryBufferSize`/ `RackCreate`.
+
+## 8. Уточнённый итоговый gap list по актуальному HLE HEAD
+
+| Путь | Точный конфликт/пробел | Риск |
+|---|---|---|
+| PS4 rack `0x4002` | `RackTailWords()` не переводит PS4 option; fatal до вызова PS5 rack implementation | Блокирует создание TLG custom racks |
+| PS4 Chorus `0x40001C00` / `0x30` | Module ID `0x1C` отсутствует в `Ngs2CheckCustomRack()` и custom voice dispatcher | Rack validation/VoiceControl завершается ошибкой |
+| PS4 Delay `0x40001D00` / `0x88` | Тот же числовой ID в PS5 HLE занят USER_FX; payload layout отличается от `Ngs2CustomVoiceUserFxParam` (`0x28`) | Неверная трактовка payload как callback pointer и user data |
+| Sampler USER_FX `0x10000008` | Нет sampler param handler; callback `sub_1AB580` ABI ещё не разобран | Unknown-param fatal или пропуск при diagnostic skip |
+| Sampler Peak Meter `0x10000009` | Нет sampler param handler / explicit no-op | Unknown-param fatal или потеря peak state |
+| Mastering limiter `0x30000003` | Нет mastering param handler; первый payload dword требует разбора helper `sub_1B2010` | Unknown-param fatal или отключение limiter |
+| Submixer `0x20000005` | Format и payload dword известны, семантика неизвестна | Не реализовывать наугад; исследовать caller/event context |
+
+Повторная проверка refs ветки `tlg_pc:ngs2` на 2026-11-01 подтвердила HEAD `685e4e1d5d69c64357dd364c17de0202a89a41ed`. Сверены `Ngs2Exports.cpp`, `Voice.cpp`, `Rack.cpp`, `Custom.cpp` и `Ngs2Types.hpp`. В рамках этого отчёта код `tlg_pc` не менялся; в `tlg_ngs2` сохранены результаты реверса и аудит совместимости.
