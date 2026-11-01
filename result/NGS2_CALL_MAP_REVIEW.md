@@ -157,9 +157,8 @@ struct ParamHeader {
 | `0x1AC4C7` | `sub_1ABEF0` | `0x20000006` | `0x30` | Submixer filter; payload схож с sampler filter |
 | `0x1ABEC9` | `sub_1ABD70` | `0x20000005` | `0x10` | Заголовок прямой; второй dword payload = 1; назначение неизвестно |
 | `0x1ADE9F` | `sub_1ADC10` | `0x30000003` | `0x10` | Mastering limiter; поле из регистра и float 1.0 |
-| `0xADE41` | `sub_1ADC10` | `0x30000004` | `0x10` | Mastering gain; два float-поля из XMM0 |
+| `0x1ADE41` | `sub_1ADC10` | `0x30000004` | `0x10` | Mastering gain; два float-поля из XMM0 |
 
-Исправление адреса: в таблице выше mastering gain call site — **`0x1ADE41`**.
 
 У всех восстановленных 46 заголовков `next=0`: в найденных конструкциях параметр отправляется отдельным блоком. Не следует экстраполировать это на все динамические цепочки без проверки.
 
