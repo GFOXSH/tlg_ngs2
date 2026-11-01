@@ -1,0 +1,991 @@
+function,label,kind,ea,api,argument,register,definition_ea,definition_instruction
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC710,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1AC6BE,"mov     edi, 4002h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC710,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1AC6C3,"mov     rsi, r15"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC710,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1AC6C6,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC710,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC710,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC710,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC762,sceNgs2RackCreate,system,rdi,0x1AC74A,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC762,sceNgs2RackCreate,rack_id,rsi,0x1AC745,"mov     esi, 4002h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC762,sceNgs2RackCreate,rack_option,rdx,0x1AC74D,"lea     rdx, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC762,sceNgs2RackCreate,context_buffer,rcx,0x1AC754,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC762,sceNgs2RackCreate,out_rack,r8,0x1AC75B,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC762,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC77F,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AC76F,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC77F,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AC776,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC77F,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AC778,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC77F,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC77F,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC77F,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC7BE,sceNgs2VoiceControl,voice,rdi,0x1AC784,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC7BE,sceNgs2VoiceControl,parameter_chain,rsi,0x1AC793,"lea     rsi, [rbp+var_D68]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC7BE,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC7BE,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC7BE,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC7BE,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9AC,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1AC967,"mov     edi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9AC,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1AC96C,"lea     rsi, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9AC,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1AC973,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9AC,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9AC,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9AC,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9FE,sceNgs2RackCreate,system,rdi,0x1AC9E6,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9FE,sceNgs2RackCreate,rack_id,rsi,0x1AC9E1,"mov     esi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9FE,sceNgs2RackCreate,rack_option,rdx,0x1AC9E9,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9FE,sceNgs2RackCreate,context_buffer,rcx,0x1AC9F0,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9FE,sceNgs2RackCreate,out_rack,r8,0x1AC9F7,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AC9FE,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA1B,sceNgs2RackGetVoiceHandle,rack,rdi,0x1ACA0B,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA1B,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1ACA12,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA1B,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1ACA14,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA1B,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA1B,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA1B,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA5B,sceNgs2VoiceControl,voice,rdi,0x1ACA20,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA5B,sceNgs2VoiceControl,parameter_chain,rsi,0x1ACA27,"lea     rsi, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA5B,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA5B,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA5B,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACA5B,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB1D,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1ACAD8,"mov     edi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB1D,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1ACADD,"lea     rsi, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB1D,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1ACAE4,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB1D,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB1D,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB1D,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB6F,sceNgs2RackCreate,system,rdi,0x1ACB57,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB6F,sceNgs2RackCreate,rack_id,rsi,0x1ACB52,"mov     esi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB6F,sceNgs2RackCreate,rack_option,rdx,0x1ACB5A,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB6F,sceNgs2RackCreate,context_buffer,rcx,0x1ACB61,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB6F,sceNgs2RackCreate,out_rack,r8,0x1ACB68,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB6F,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB8C,sceNgs2RackGetVoiceHandle,rack,rdi,0x1ACB7C,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB8C,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1ACB83,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB8C,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1ACB85,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB8C,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB8C,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACB8C,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACBCC,sceNgs2VoiceControl,voice,rdi,0x1ACB91,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACBCC,sceNgs2VoiceControl,parameter_chain,rsi,0x1ACB98,"lea     rsi, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACBCC,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACBCC,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACBCC,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACBCC,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACC7D,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1ACC38,"mov     edi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACC7D,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1ACC3D,"lea     rsi, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACC7D,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1ACC44,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACC7D,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACC7D,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACC7D,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCCF,sceNgs2RackCreate,system,rdi,0x1ACCB7,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCCF,sceNgs2RackCreate,rack_id,rsi,0x1ACCB2,"mov     esi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCCF,sceNgs2RackCreate,rack_option,rdx,0x1ACCBA,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCCF,sceNgs2RackCreate,context_buffer,rcx,0x1ACCC1,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCCF,sceNgs2RackCreate,out_rack,r8,0x1ACCC8,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCCF,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCEC,sceNgs2RackGetVoiceHandle,rack,rdi,0x1ACCDC,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCEC,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1ACCE3,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCEC,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1ACCE5,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCEC,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCEC,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACCEC,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACD2C,sceNgs2VoiceControl,voice,rdi,0x1ACCF1,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACD2C,sceNgs2VoiceControl,parameter_chain,rsi,0x1ACCF8,"lea     rsi, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACD2C,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACD2C,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACD2C,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACD2C,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE05,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1ACDC0,"mov     edi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE05,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1ACDC5,"lea     rsi, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE05,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1ACDCC,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE05,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE05,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE05,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE57,sceNgs2RackCreate,system,rdi,0x1ACE3F,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE57,sceNgs2RackCreate,rack_id,rsi,0x1ACE3A,"mov     esi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE57,sceNgs2RackCreate,rack_option,rdx,0x1ACE42,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE57,sceNgs2RackCreate,context_buffer,rcx,0x1ACE49,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE57,sceNgs2RackCreate,out_rack,r8,0x1ACE50,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE57,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE74,sceNgs2RackGetVoiceHandle,rack,rdi,0x1ACE64,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE74,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1ACE6B,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE74,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1ACE6D,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE74,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE74,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACE74,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACEB4,sceNgs2VoiceControl,voice,rdi,0x1ACE79,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACEB4,sceNgs2VoiceControl,parameter_chain,rsi,0x1ACE80,"lea     rsi, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACEB4,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACEB4,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACEB4,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACEB4,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACF74,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1ACF32,"mov     edi, 2001h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACF74,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1ACF37,"lea     rsi, [rbp+var_160]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACF74,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1ACF3E,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACF74,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACF74,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACF74,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFC6,sceNgs2RackCreate,system,rdi,0x1ACFAE,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFC6,sceNgs2RackCreate,rack_id,rsi,0x1ACFA9,"mov     esi, 2001h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFC6,sceNgs2RackCreate,rack_option,rdx,0x1ACFB1,"lea     rdx, [rbp+var_160]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFC6,sceNgs2RackCreate,context_buffer,rcx,0x1ACFB8,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFC6,sceNgs2RackCreate,out_rack,r8,0x1ACFBF,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFC6,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFE3,sceNgs2RackGetVoiceHandle,rack,rdi,0x1ACFD3,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFE3,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1ACFDA,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFE3,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1ACFDC,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFE3,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFE3,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ACFE3,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD022,sceNgs2VoiceControl,voice,rdi,0x1ACFE8,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD022,sceNgs2VoiceControl,parameter_chain,rsi,0x1ACFF7,"lea     rsi, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD022,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD022,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD022,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD022,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD0DE,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1AD099,"mov     edi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD0DE,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1AD09E,"lea     rsi, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD0DE,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1AD0A5,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD0DE,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD0DE,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD0DE,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD130,sceNgs2RackCreate,system,rdi,0x1AD118,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD130,sceNgs2RackCreate,rack_id,rsi,0x1AD113,"mov     esi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD130,sceNgs2RackCreate,rack_option,rdx,0x1AD11B,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD130,sceNgs2RackCreate,context_buffer,rcx,0x1AD122,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD130,sceNgs2RackCreate,out_rack,r8,0x1AD129,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD130,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD14D,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AD13D,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD14D,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AD144,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD14D,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AD146,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD14D,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD14D,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD14D,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD18D,sceNgs2VoiceControl,voice,rdi,0x1AD152,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD18D,sceNgs2VoiceControl,parameter_chain,rsi,0x1AD159,"lea     rsi, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD18D,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD18D,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD18D,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD18D,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD249,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1AD204,"mov     edi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD249,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1AD209,"lea     rsi, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD249,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1AD210,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD249,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD249,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD249,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD29B,sceNgs2RackCreate,system,rdi,0x1AD283,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD29B,sceNgs2RackCreate,rack_id,rsi,0x1AD27E,"mov     esi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD29B,sceNgs2RackCreate,rack_option,rdx,0x1AD286,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD29B,sceNgs2RackCreate,context_buffer,rcx,0x1AD28D,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD29B,sceNgs2RackCreate,out_rack,r8,0x1AD294,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD29B,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2B8,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AD2A8,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2B8,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AD2AF,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2B8,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AD2B1,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2B8,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2B8,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2B8,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2F8,sceNgs2VoiceControl,voice,rdi,0x1AD2BD,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2F8,sceNgs2VoiceControl,parameter_chain,rsi,0x1AD2C4,"lea     rsi, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2F8,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2F8,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2F8,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD2F8,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD427,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1AD3D1,"mov     edi, 4002h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD427,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1AD3D6,"mov     rsi, r15"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD427,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1AD3D9,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD427,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD427,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD427,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD479,sceNgs2RackCreate,system,rdi,0x1AD461,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD479,sceNgs2RackCreate,rack_id,rsi,0x1AD45C,"mov     esi, 4002h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD479,sceNgs2RackCreate,rack_option,rdx,0x1AD464,"lea     rdx, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD479,sceNgs2RackCreate,context_buffer,rcx,0x1AD46B,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD479,sceNgs2RackCreate,out_rack,r8,0x1AD472,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD479,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD496,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AD486,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD496,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AD48D,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD496,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AD48F,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD496,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD496,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD496,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD4D5,sceNgs2VoiceControl,voice,rdi,0x1AD49B,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD4D5,sceNgs2VoiceControl,parameter_chain,rsi,0x1AD4AA,"lea     rsi, [rbp+var_D68]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD4D5,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD4D5,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD4D5,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD4D5,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD5DE,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1AD58C,"mov     edi, 4002h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD5DE,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1AD591,"mov     rsi, r15"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD5DE,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1AD594,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD5DE,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD5DE,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD5DE,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD630,sceNgs2RackCreate,system,rdi,0x1AD618,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD630,sceNgs2RackCreate,rack_id,rsi,0x1AD613,"mov     esi, 4002h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD630,sceNgs2RackCreate,rack_option,rdx,0x1AD61B,"lea     rdx, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD630,sceNgs2RackCreate,context_buffer,rcx,0x1AD622,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD630,sceNgs2RackCreate,out_rack,r8,0x1AD629,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD630,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD64D,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AD63D,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD64D,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AD644,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD64D,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AD646,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD64D,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD64D,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD64D,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD68C,sceNgs2VoiceControl,voice,rdi,0x1AD652,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD68C,sceNgs2VoiceControl,parameter_chain,rsi,0x1AD661,"lea     rsi, [rbp+var_D68]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD68C,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD68C,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD68C,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD68C,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD765,sceNgs2RackQueryBufferSize,rack_id,rdi,0x1AD720,"mov     edi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD765,sceNgs2RackQueryBufferSize,rack_option,rsi,0x1AD725,"lea     rsi, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD765,sceNgs2RackQueryBufferSize,out_buffer_info,rdx,0x1AD72C,"lea     rdx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD765,sceNgs2RackQueryBufferSize,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD765,sceNgs2RackQueryBufferSize,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD765,sceNgs2RackQueryBufferSize,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7B7,sceNgs2RackCreate,system,rdi,0x1AD79F,"mov     rdi, r14"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7B7,sceNgs2RackCreate,rack_id,rsi,0x1AD79A,"mov     esi, 2000h"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7B7,sceNgs2RackCreate,rack_option,rdx,0x1AD7A2,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7B7,sceNgs2RackCreate,context_buffer,rcx,0x1AD7A9,"lea     rcx, [rbp+var_1A0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7B7,sceNgs2RackCreate,out_rack,r8,0x1AD7B0,"lea     r8, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7B7,sceNgs2RackCreate,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7D4,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AD7C4,"mov     rdi, [rbp+var_D78]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7D4,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AD7CB,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7D4,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AD7CD,"lea     rdx, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7D4,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7D4,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD7D4,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD814,sceNgs2VoiceControl,voice,rdi,0x1AD7D9,"mov     rdi, [rbp+var_D70]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD814,sceNgs2VoiceControl,parameter_chain,rsi,0x1AD7E0,"lea     rsi, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD814,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD814,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD814,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD814,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD94B,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AD93F,"mov     rdi, [r14]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD94B,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AD942,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD94B,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AD944,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD94B,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD94B,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD94B,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD99C,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AD990,"mov     rdi, [r14]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD99C,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AD993,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD99C,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AD995,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD99C,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AD95F,"lea     rcx, sub_1B1780"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD99C,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD99C,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD9E4,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AD9D8,"mov     rdi, [r14]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD9E4,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AD9DB,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD9E4,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AD9DD,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD9E4,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AD9CC,"lea     rcx, sub_1B16C0"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD9E4,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1AD9E4,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA29,sceNgs2RackGetVoiceHandle,rack,rdi,0x1ADA1D,"mov     rdi, [r14]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA29,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1ADA20,"xor     esi, esi"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA29,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1ADA22,"lea     rdx, [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA29,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1ADA14,"lea     rcx, sub_1B1700"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA29,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA29,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA84,sceNgs2VoiceControl,voice,rdi,0x1ADA2E,"mov     rdi, qword ptr [rbp+var_D0]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA84,sceNgs2VoiceControl,parameter_chain,rsi,0x1ADA6E,"lea     rsi, [rbp+var_678]"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA84,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA84,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,0x1ADA59,"lea     rcx, sub_1B1740"
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA84,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AC510,bus_graph_and_custom_rack_builder,NGS2_API_CALL,0x1ADA84,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF828,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AF810,"mov     rdi, [r13+0]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF828,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AF817,"xor     esi, esi"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF828,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AF819,"lea     rdx, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF828,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AF7DF,"mov     rcx, cs:qword_1700698"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF828,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF828,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF86A,sceNgs2VoiceControl,voice,rdi,0x1AF832,"mov     rdi, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF86A,sceNgs2VoiceControl,parameter_chain,rsi,0x1AF83A,"mov     rsi, r14"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF86A,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF86A,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF86A,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF86A,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF8FC,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AF8E3,"mov     rdi, [r13+0]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF8FC,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AF8EF,"xor     esi, esi"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF8FC,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AF8E7,"lea     rdx, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF8FC,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF8FC,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AF8FC,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA04,sceNgs2VoiceControl,voice,rdi,0x1AF981,"mov     rdi, r14"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA04,sceNgs2VoiceControl,parameter_chain,rsi,0x1AF984,"lea     rsi, [rsp+2A8h+var_D8]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA04,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA04,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA04,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA04,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA88,sceNgs2VoiceControl,voice,rdi,0x1AFA47,"mov     rdi, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA88,sceNgs2VoiceControl,parameter_chain,rsi,0x1AFA4F,"mov     rsi, r14"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA88,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA88,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA88,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFA88,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFB08,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AFAF1,"mov     rdi, [r13+0]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFB08,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AFAFD,"xor     esi, esi"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFB08,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AFAF5,"lea     rdx, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFB08,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFB08,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFB08,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC14,sceNgs2VoiceControl,voice,rdi,0x1AFBD0,"mov     rdi, rbx"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC14,sceNgs2VoiceControl,parameter_chain,rsi,0x1AFBC8,"lea     rsi, [rsp+2A8h+var_D8]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC14,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC14,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC14,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC14,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC57,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AFC30,"mov     rdi, [r13+0]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC57,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AFC43,"xor     esi, esi"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC57,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AFC3B,"lea     rdx, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC57,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC57,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFC57,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFCEA,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AFCDC,"mov     rdi, [r13+0]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFCEA,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AFCE8,"xor     esi, esi"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFCEA,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AFCE0,"lea     rdx, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFCEA,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFCEA,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFCEA,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFE09,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AFDFB,"mov     rdi, [r13+0]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFE09,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AFE07,"xor     esi, esi"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFE09,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AFDFF,"lea     rdx, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFE09,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AFDF2,"add     rcx, 8"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFE09,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFE09,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF12,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AFF04,"mov     rdi, [r13+0]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF12,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AFF10,"xor     esi, esi"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF12,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AFF08,"lea     rdx, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF12,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF12,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF12,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF71,sceNgs2VoiceControl,voice,rdi,0x1AFF28,"mov     rdi, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF71,sceNgs2VoiceControl,parameter_chain,rsi,0x1AFF30,"lea     rsi, [rsp+2A8h+var_D8]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF71,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF71,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF71,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1AFF71,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1B0015,sceNgs2VoiceControl,voice,rdi,0x1AFFD2,"mov     rdi, [rsp+2A8h+var_138]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1B0015,sceNgs2VoiceControl,parameter_chain,rsi,0x1B000D,"lea     rsi, [rsp+2A8h+var_D8]"
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1B0015,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1B0015,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1B0015,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1AEFD0,custom_effect_rack_builder,NGS2_API_CALL,0x1B0015,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9882,sceNgs2RackGetVoiceHandle,rack,rdi,0x1A987E,"mov     rdi, [rax+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9882,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1A9873,"movzx   esi, word ptr [rbx+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9882,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1A9877,"lea     rdx, [rbp+var_150]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9882,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9882,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9882,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A99B3,sceNgs2RackGetVoiceHandle,rack,rdi,0x1A99AF,"mov     rdi, [rcx+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A99B3,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1A99A4,"movzx   esi, word ptr [rax+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A99B3,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1A99A8,"lea     rdx, [rbp+var_168]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A99B3,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1A999D,"mov     rcx, cs:qword_57F1C20"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A99B3,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A99B3,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9ADC,sceNgs2VoiceControl,voice,rdi,0x1A99B8,"mov     rdi, [rbp+var_168]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9ADC,sceNgs2VoiceControl,parameter_chain,rsi,0x1A9ACB,"lea     rsi, [rbp+var_150]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9ADC,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,0x1A9A56,"mov     edx, dword ptr [rbp+var_190]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9ADC,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,0x1A9A64,"mov     ecx, dword ptr [rbp+var_1A0]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9ADC,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9ADC,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9E7B,sceNgs2RackGetVoiceHandle,rack,rdi,0x1A9E77,"mov     rdi, [rax+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9E7B,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1A9E4B,"movzx   esi, word ptr [rcx+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9E7B,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1A9E4F,"lea     rdx, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9E7B,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1A9E1D,"test    rcx, rcx"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9E7B,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,0x1A9DEE,"cmp     r8d, 28h ; '('"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9E7B,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,0x1A9D13,"mov     r9d, dword ptr [rbp+var_168+4]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9F5B,sceNgs2VoiceControl,voice,rdi,0x1A9E87,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9F5B,sceNgs2VoiceControl,parameter_chain,rsi,0x1A9F4A,"lea     rsi, [rbp+var_150]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9F5B,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9F5B,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9F5B,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9F5B,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9FF4,sceNgs2VoiceControl,voice,rdi,0x1A9FA8,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9FF4,sceNgs2VoiceControl,parameter_chain,rsi,0x1A9FAF,"lea     rsi, [rbp+var_150]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9FF4,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,0x1A9F9F,"mov     rdx, [r14+0F8h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9FF4,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,0x1A9F9B,"cmp     ecx, eax"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9FF4,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1A9FF4,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA0A5,sceNgs2VoiceControl,voice,rdi,0x1AA05A,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA0A5,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA061,"lea     rsi, [rbp+var_150]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA0A5,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,0x1AA028,"movzx   edx, byte ptr [r13+101h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA0A5,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA0A5,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA0A5,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA4FB,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AA4F7,"mov     rdi, [rax+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA4FB,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AA4E8,"movzx   esi, word ptr [rcx+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA4FB,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AA4EC,"lea     rdx, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA4FB,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AA4D8,"test    rcx, rcx"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA4FB,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA4FB,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA545,sceNgs2VoiceControl,voice,rdi,0x1AA500,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA545,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA507,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA545,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA545,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA545,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA545,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA57B,sceNgs2VoiceControl,voice,rdi,0x1AA54A,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA57B,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA551,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA57B,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA57B,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA57B,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA57B,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5B7,sceNgs2VoiceControl,voice,rdi,0x1AA580,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5B7,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA587,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5B7,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5B7,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5B7,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5B7,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5F3,sceNgs2VoiceControl,voice,rdi,0x1AA5BC,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5F3,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA5C3,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5F3,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5F3,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5F3,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA5F3,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA62F,sceNgs2VoiceControl,voice,rdi,0x1AA5F8,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA62F,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA5FF,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA62F,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA62F,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA62F,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA62F,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA66B,sceNgs2VoiceControl,voice,rdi,0x1AA634,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA66B,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA63B,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA66B,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA66B,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA66B,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA66B,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6A7,sceNgs2VoiceControl,voice,rdi,0x1AA670,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6A7,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA677,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6A7,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6A7,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6A7,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6A7,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6E3,sceNgs2VoiceControl,voice,rdi,0x1AA6AC,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6E3,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA6B3,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6E3,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6E3,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6E3,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA6E3,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA71F,sceNgs2VoiceControl,voice,rdi,0x1AA6E8,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA71F,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA6EF,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA71F,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA71F,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA71F,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA71F,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA790,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AA78C,"mov     rdi, [rax+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA790,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AA783,"movzx   esi, word ptr [r14+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA790,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AA788,"lea     rdx, [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA790,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA790,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,0x1AA724,"mov     r8b, [r13+124h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA790,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA7CC,sceNgs2VoiceControl,voice,rdi,0x1AA799,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA7CC,sceNgs2VoiceControl,parameter_chain,rsi,0x1AA79D,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA7CC,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA7CC,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA7CC,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AA7CC,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAB6E,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AAB6A,"mov     rdi, [rax+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAB6E,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AAB63,"movzx   esi, word ptr [rcx+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAB6E,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AAB67,"mov     rdx, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAB6E,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AAB53,"test    rcx, rcx"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAB6E,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAB6E,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABA1,sceNgs2VoiceControl,voice,rdi,0x1AAB73,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABA1,sceNgs2VoiceControl,parameter_chain,rsi,0x1AAB77,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABA1,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABA1,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABA1,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABA1,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABDA,sceNgs2VoiceControl,voice,rdi,0x1AABA6,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABDA,sceNgs2VoiceControl,parameter_chain,rsi,0x1AABAA,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABDA,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABDA,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABDA,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AABDA,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC13,sceNgs2VoiceControl,voice,rdi,0x1AABDF,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC13,sceNgs2VoiceControl,parameter_chain,rsi,0x1AABE3,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC13,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC13,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC13,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC13,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC4C,sceNgs2VoiceControl,voice,rdi,0x1AAC18,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC4C,sceNgs2VoiceControl,parameter_chain,rsi,0x1AAC1C,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC4C,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC4C,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC4C,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC4C,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC85,sceNgs2VoiceControl,voice,rdi,0x1AAC51,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC85,sceNgs2VoiceControl,parameter_chain,rsi,0x1AAC55,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC85,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC85,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC85,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAC85,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACBE,sceNgs2VoiceControl,voice,rdi,0x1AAC8A,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACBE,sceNgs2VoiceControl,parameter_chain,rsi,0x1AAC8E,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACBE,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACBE,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACBE,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACBE,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACF7,sceNgs2VoiceControl,voice,rdi,0x1AACC3,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACF7,sceNgs2VoiceControl,parameter_chain,rsi,0x1AACC7,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACF7,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACF7,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACF7,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AACF7,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD26,sceNgs2VoiceControl,voice,rdi,0x1AACFC,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD26,sceNgs2VoiceControl,parameter_chain,rsi,0x1AAD00,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD26,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD26,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD26,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD26,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD74,sceNgs2VoiceControl,voice,rdi,0x1AAD32,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD74,sceNgs2VoiceControl,parameter_chain,rsi,0x1AAD36,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD74,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD74,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD74,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAD74,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE08,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AADEC,"mov     rdi, [rax+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE08,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AADE5,"movzx   esi, word ptr [rcx+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE08,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AADE9,"mov     rdx, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE08,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AADC3,"test    rcx, rcx"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE08,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE08,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE95,sceNgs2VoiceControl,voice,rdi,0x1AAE15,"mov     rdi, qword ptr [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE95,sceNgs2VoiceControl,parameter_chain,rsi,0x1AAE19,"mov     rsi, r15"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE95,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,0x1AAE68,"and     dl, cl"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE95,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,0x1AAE56,"and     cl, al"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE95,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAE95,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF0C,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AAF08,"mov     rdi, [rcx+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF0C,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AAEFD,"movzx   esi, word ptr [rax+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF0C,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AAF01,"lea     rdx, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF0C,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AAEF6,"mov     rcx, cs:qword_57F1C20"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF0C,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF0C,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF4D,sceNgs2VoiceControl,voice,rdi,0x1AAF11,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF4D,sceNgs2VoiceControl,parameter_chain,rsi,0x1AAF1E,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF4D,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF4D,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF4D,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAF4D,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAFE9,sceNgs2VoiceControl,voice,rdi,0x1AAF9A,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAFE9,sceNgs2VoiceControl,parameter_chain,rsi,0x1AAFA5,"mov     rsi, r12"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAFE9,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,0x1AAF93,"mov     rdx, [r15+0F8h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAFE9,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,0x1AAF87,"movzx   ecx, byte ptr [rcx+rax*8+5]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAFE9,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AAFE9,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB083,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AB07F,"mov     rdi, [rcx+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB083,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AB074,"movzx   esi, word ptr [rax+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB083,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AB078,"lea     rdx, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB083,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AB06D,"mov     rcx, cs:qword_57F1C20"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB083,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB083,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB135,sceNgs2VoiceControl,voice,rdi,0x1AB0AA,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB135,sceNgs2VoiceControl,parameter_chain,rsi,0x1AB0B1,"lea     rsi, [rbp+var_150]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB135,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB135,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB135,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB135,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB2FF,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AB2FB,"mov     rdi, [rcx+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB2FF,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AB2F0,"movzx   esi, word ptr [rax+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB2FF,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AB2F4,"lea     rdx, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB2FF,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AB2E9,"mov     rcx, cs:qword_57F1C20"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB2FF,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB2FF,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB33F,sceNgs2VoiceControl,voice,rdi,0x1AB304,"mov     rdi, [rbp+var_170]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB33F,sceNgs2VoiceControl,parameter_chain,rsi,0x1AB30B,"lea     rsi, [rbp+var_150]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB33F,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB33F,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB33F,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB33F,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB453,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AB44F,"mov     rdi, [rax+78h]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB453,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AB443,"movzx   esi, word ptr [r14+8]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB453,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AB448,"lea     rdx, [rbp+var_168]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB453,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AB3D8,"and     cl, 0Fh"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB453,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,0x1AB390,"mov     r8d, 718h"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB453,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,0x1AB396,"mov     r9d, 810h"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB489,sceNgs2VoiceControl,voice,rdi,0x1AB458,"mov     rdi, [rbp+var_168]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB489,sceNgs2VoiceControl,parameter_chain,rsi,0x1AB45F,"lea     rsi, [rbp+var_50]"
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB489,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB489,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB489,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A9690,sampler_voice_builder,NGS2_API_CALL,0x1AB489,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADD6C,sceNgs2RackGetVoiceHandle,rack,rdi,0x1ADD68,"mov     rdi, [rax+68h]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADD6C,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1ADD66,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADD6C,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1ADD5F,"lea     rdx, [rbp+var_C8]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADD6C,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1ADD2C,"cmp     rcx, 4C00h"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADD6C,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADD6C,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,0x1ADC3F,"test    r9, r9"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE41,sceNgs2VoiceControl,voice,rdi,0x1ADE07,"mov     rdi, [rbp+var_C8]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE41,sceNgs2VoiceControl,parameter_chain,rsi,0x1ADE0E,"lea     rsi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE41,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE41,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE41,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE41,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE9F,sceNgs2VoiceControl,voice,rdi,0x1ADE65,"mov     rdi, [rbp+var_C8]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE9F,sceNgs2VoiceControl,parameter_chain,rsi,0x1ADE6C,"lea     rsi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE9F,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE9F,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE9F,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADE9F,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADEF2,sceNgs2RackGetVoiceHandle,rack,rdi,0x1ADEEA,"mov     rdi, [rax+70h]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADEF2,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1ADEE5,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADEF2,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1ADEDE,"lea     rdx, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADEF2,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1ADEC4,"or      cl, [r15]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADEF2,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADEF2,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,0x1ADECD,"mov     r9, r14"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF03,sceNgs2RackGetVoiceHandle,rack,rdi,0x1ADF00,"mov     rdi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF03,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1ADEFE,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF03,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1ADEF7,"lea     rdx, [rbp+var_B0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF03,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF03,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF03,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF3F,sceNgs2VoiceControl,voice,rdi,0x1ADF08,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF3F,sceNgs2VoiceControl,parameter_chain,rsi,0x1ADF16,"lea     rsi, [rbp+var_70]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF3F,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF3F,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF3F,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1ADF3F,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE06F,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE06C,"mov     rdi, r13"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE06F,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE04C,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE06F,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE05A,"lea     rdx, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE06F,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AE03B,"mov     rcx, [r9]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE06F,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE06F,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,0x1ADFC0,"mov     r9, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE09D,sceNgs2VoiceControl,voice,rdi,0x1AE074,"mov     rdi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE09D,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE09A,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE09D,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE09D,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE09D,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE09D,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0CD,sceNgs2VoiceControl,voice,rdi,0x1AE0A2,"mov     rdi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0CD,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE0A9,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0CD,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0CD,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0CD,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0CD,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0FD,sceNgs2VoiceControl,voice,rdi,0x1AE0D2,"mov     rdi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0FD,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE0D9,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0FD,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0FD,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0FD,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE0FD,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE12D,sceNgs2VoiceControl,voice,rdi,0x1AE102,"mov     rdi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE12D,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE109,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE12D,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE12D,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE12D,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE12D,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE15D,sceNgs2VoiceControl,voice,rdi,0x1AE132,"mov     rdi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE15D,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE139,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE15D,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE15D,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE15D,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE15D,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE18D,sceNgs2VoiceControl,voice,rdi,0x1AE162,"mov     rdi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE18D,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE169,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE18D,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE18D,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE18D,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE18D,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1BD,sceNgs2VoiceControl,voice,rdi,0x1AE192,"mov     rdi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1BD,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE199,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1BD,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1BD,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1BD,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1BD,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1ED,sceNgs2VoiceControl,voice,rdi,0x1AE1C2,"mov     rdi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1ED,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE1C9,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1ED,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1ED,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1ED,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE1ED,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE240,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE233,"mov     rdi, [rax+70h]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE240,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE237,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE240,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE239,"lea     rdx, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE240,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AE216,"imul    rcx, 98h"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE240,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE240,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE251,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE247,"mov     rdi, r13"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE251,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE245,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE251,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE24A,"lea     rdx, [rbp+var_B0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE251,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE251,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE251,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE28C,sceNgs2VoiceControl,voice,rdi,0x1AE256,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE28C,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE264,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE28C,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE28C,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE28C,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE28C,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE347,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE344,"mov     rdi, r14"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE347,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE333,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE347,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE335,"lea     rdx, [rbp+var_C8]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE347,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE347,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE347,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE381,sceNgs2VoiceControl,voice,rdi,0x1AE34C,"mov     rdi, [rbp+var_C8]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE381,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE379,"mov     rsi, rbx"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE381,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE381,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE381,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE381,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3B0,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE397,"mov     rdi, r14"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3B0,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE395,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3B0,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE39A,"lea     rdx, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3B0,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AE3A1,"mov     rcx, [r13+0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3B0,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3B0,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3C1,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE3B7,"mov     rdi, rbx"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3C1,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE3B5,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3C1,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE3BA,"lea     rdx, [rbp+var_B0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3C1,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3C1,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3C1,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3FC,sceNgs2VoiceControl,voice,rdi,0x1AE3C6,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3FC,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE3D4,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3FC,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3FC,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3FC,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE3FC,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE45B,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE427,"mov     rdi, [rbp+var_F8]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE45B,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE452,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE45B,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE454,"lea     rdx, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE45B,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AE43A,"imul    rcx, 98h"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE45B,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE45B,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,0x1AE401,"mov     r9, r13"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE46C,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE462,"mov     rdi, r14"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE46C,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE460,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE46C,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE465,"lea     rdx, [rbp+var_B0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE46C,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE46C,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE46C,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE4AB,sceNgs2VoiceControl,voice,rdi,0x1AE471,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE4AB,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE49D,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE4AB,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE4AB,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE4AB,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE4AB,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE520,sceNgs2RackGetVoiceHandle,rack,rdi,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE520,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE517,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE520,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE519,"lea     rdx, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE520,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AE507,"shr     rcx, 20h"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE520,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE520,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,0x1AE4B7,"mov     r9, rax"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE53A,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE536,"mov     rdi, [rax+68h]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE53A,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE52C,"mov     esi, r15d"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE53A,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE52F,"lea     rdx, [rbp+var_B0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE53A,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE53A,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE53A,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE576,sceNgs2VoiceControl,voice,rdi,0x1AE53F,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE576,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE54D,"lea     rsi, [rbp+var_70]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE576,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE576,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE576,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE576,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE5E3,sceNgs2VoiceControl,voice,rdi,0x1AE5B9,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE5E3,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE5C0,"lea     rsi, [rbp+var_70]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE5E3,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE5E3,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE5E3,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE5E3,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE62C,sceNgs2RackGetVoiceHandle,rack,rdi,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE62C,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE623,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE62C,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE625,"lea     rdx, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE62C,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AE61A,"shr     rcx, 20h"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE62C,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE62C,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE646,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE642,"mov     rdi, [rax+68h]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE646,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE638,"mov     esi, r15d"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE646,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE63B,"lea     rdx, [rbp+var_B0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE646,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE646,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE646,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE685,sceNgs2VoiceControl,voice,rdi,0x1AE64B,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE685,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE677,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE685,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE685,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE685,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE685,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE6DF,sceNgs2VoiceControl,voice,rdi,0x1AE6B6,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE6DF,sceNgs2VoiceControl,parameter_chain,rsi,0x1AE6BD,"mov     rsi, r15"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE6DF,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE6DF,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE6DF,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AE6DF,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA03,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AE9ED,"mov     rdi, [rcx+rax]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA03,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AE9D2,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA03,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AE9D4,"lea     rdx, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA03,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AE9E3,"mov     rcx, [rcx]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA03,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA03,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA14,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AEA0A,"mov     rdi, rbx"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA14,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AEA08,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA14,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AEA0D,"lea     rdx, [rbp+var_B0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA14,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA14,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA14,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA50,sceNgs2VoiceControl,voice,rdi,0x1AEA19,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA50,sceNgs2VoiceControl,parameter_chain,rsi,0x1AEA42,"mov     rsi, rbx"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA50,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA50,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA50,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA50,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA65,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AEA55,"mov     rdi, [rbp+var_128]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA65,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AEA5C,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA65,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AEA5E,"lea     rdx, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA65,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA65,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEA65,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAA0,sceNgs2VoiceControl,voice,rdi,0x1AEA72,"mov     rdi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAA0,sceNgs2VoiceControl,parameter_chain,rsi,0x1AEA79,"mov     rsi, rbx"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAA0,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAA0,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAA0,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAA0,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAFC,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AEAD5,"mov     rdi, [rsi+rcx]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAFC,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AEAFA,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAFC,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AEADD,"lea     rdx, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAFC,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AEAD9,"lea     rcx, [rdx+rdx*4]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAFC,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEAFC,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB0D,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AEB03,"mov     rdi, rbx"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB0D,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AEB01,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB0D,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AEB06,"lea     rdx, [rbp+var_B0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB0D,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB0D,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB0D,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB49,sceNgs2VoiceControl,voice,rdi,0x1AEB12,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB49,sceNgs2VoiceControl,parameter_chain,rsi,0x1AEB3B,"mov     rsi, rbx"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB49,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB49,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB49,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB49,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB5E,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AEB4E,"mov     rdi, [rbp+var_128]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB5E,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AEB55,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB5E,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AEB57,"lea     rdx, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB5E,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB5E,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB5E,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB99,sceNgs2VoiceControl,voice,rdi,0x1AEB6B,"mov     rdi, [rbp+var_C0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB99,sceNgs2VoiceControl,parameter_chain,rsi,0x1AEB72,"mov     rsi, rbx"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB99,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB99,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB99,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEB99,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AED80,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AED7C,"mov     rdi, [rcx+rax]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AED80,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AED5B,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AED80,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AED5D,"lea     rdx, [rbp+var_B0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AED80,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AED6C,"mov     rcx, [r13+0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AED80,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AED80,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEDA4,sceNgs2VoiceControl,voice,rdi,0x1AED85,"mov     rdi, [rbp+var_B0]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEDA4,sceNgs2VoiceControl,parameter_chain,rsi,0x1AED8C,"lea     rsi, [rbp+var_70]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEDA4,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEDA4,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEDA4,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEDA4,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF11,sceNgs2RackGetVoiceHandle,rack,rdi,0x1AEF0D,"mov     rdi, [rcx+rax]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF11,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1AEEFD,"xor     esi, esi"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF11,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1AEEFF,"lea     rdx, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF11,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1AEEF9,"mov     rcx, [r12]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF11,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF11,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF3B,sceNgs2VoiceControl,voice,rdi,0x1AEF16,"mov     rdi, [rbp+var_90]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF3B,sceNgs2VoiceControl,parameter_chain,rsi,0x1AEF1D,"lea     rsi, [rbp+var_70]"
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF3B,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF3B,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF3B,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ADC10,mastering_voice_builder,NGS2_API_CALL,0x1AEF3B,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDBD,sceNgs2RackGetVoiceHandle,rack,rdi,0x1ABDB0,"mov     rdi, [rax+80h]"
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDBD,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1ABDB7,"movzx   esi, word ptr [r12+8]"
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDBD,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1ABDAC,"lea     rdx, [rbp+var_40]"
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDBD,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,,
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDBD,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDBD,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDF8,sceNgs2VoiceControl,voice,rdi,0x1ABDDC,"mov     rdi, [rbp+var_40]; jumptable 00000000001ABDDA case 0"
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDF8,sceNgs2VoiceControl,parameter_chain,rsi,0x1ABDE0,"lea     rsi, [rbp+var_38]"
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDF8,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDF8,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,0x1ABDC9,"lea     rcx, off_14DB014"
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDF8,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABDF8,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABEC9,sceNgs2VoiceControl,voice,rdi,0x1ABEA7,"mov     rdi, [rbp+var_40]; jumptable 00000000001ABDDA case 7"
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABEC9,sceNgs2VoiceControl,parameter_chain,rsi,0x1ABEC1,"lea     rsi, [rbp+var_38]"
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABEC9,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABEC9,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABEC9,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1ABD70,unknown_submixer_parameter_builder,NGS2_API_CALL,0x1ABEC9,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A8FEA,sceNgs2RackGetVoiceHandle,rack,rdi,0x1A8FE6,"mov     rdi, [rax+78h]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A8FEA,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1A8FDF,"movzx   esi, word ptr [rcx+8]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A8FEA,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1A8FE3,"mov     rdx, r14"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A8FEA,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1A8FD3,"test    rcx, rcx"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A8FEA,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A8FEA,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A900A,sceNgs2VoiceControl,voice,rdi,0x1A8FEF,"mov     rdi, [rbp+var_48]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A900A,sceNgs2VoiceControl,parameter_chain,rsi,0x1A8FF3,"mov     rsi, r15"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A900A,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A900A,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A900A,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A900A,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A913A,sceNgs2RackGetVoiceHandle,rack,rdi,0x1A9136,"mov     rdi, [rax+78h]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A913A,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1A912F,"movzx   esi, word ptr [rcx+8]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A913A,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1A9133,"mov     rdx, r14"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A913A,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1A9123,"test    rcx, rcx"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A913A,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A913A,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9156,sceNgs2VoiceControl,voice,rdi,0x1A913F,"mov     rdi, [rbp+var_48]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9156,sceNgs2VoiceControl,parameter_chain,rsi,0x1A9143,"mov     rsi, r15"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9156,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9156,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9156,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9156,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A927A,sceNgs2RackGetVoiceHandle,rack,rdi,0x1A9276,"mov     rdi, [rax+78h]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A927A,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1A926F,"movzx   esi, word ptr [rcx+8]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A927A,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1A9273,"mov     rdx, r14"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A927A,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1A9263,"test    rcx, rcx"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A927A,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A927A,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9296,sceNgs2VoiceControl,voice,rdi,0x1A927F,"mov     rdi, [rbp+var_48]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9296,sceNgs2VoiceControl,parameter_chain,rsi,0x1A9283,"mov     rsi, r15"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9296,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9296,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9296,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9296,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93BA,sceNgs2RackGetVoiceHandle,rack,rdi,0x1A93B6,"mov     rdi, [rax+78h]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93BA,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1A93AF,"movzx   esi, word ptr [rcx+8]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93BA,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1A93B3,"mov     rdx, r14"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93BA,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1A93A3,"test    rcx, rcx"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93BA,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93BA,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93D6,sceNgs2VoiceControl,voice,rdi,0x1A93BF,"mov     rdi, [rbp+var_48]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93D6,sceNgs2VoiceControl,parameter_chain,rsi,0x1A93C3,"mov     rsi, r15"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93D6,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93D6,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93D6,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A93D6,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A94FA,sceNgs2RackGetVoiceHandle,rack,rdi,0x1A94F6,"mov     rdi, [rax+78h]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A94FA,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1A94EF,"movzx   esi, word ptr [rcx+8]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A94FA,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1A94F3,"mov     rdx, r14"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A94FA,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1A94E3,"test    rcx, rcx"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A94FA,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A94FA,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9516,sceNgs2VoiceControl,voice,rdi,0x1A94FF,"mov     rdi, [rbp+var_48]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9516,sceNgs2VoiceControl,parameter_chain,rsi,0x1A9503,"mov     rsi, r15"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9516,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9516,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9516,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A9516,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A962A,sceNgs2RackGetVoiceHandle,rack,rdi,0x1A9626,"mov     rdi, [rax+78h]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A962A,sceNgs2RackGetVoiceHandle,voice_index,rsi,0x1A961F,"movzx   esi, word ptr [rcx+8]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A962A,sceNgs2RackGetVoiceHandle,out_voice,rdx,0x1A9623,"mov     rdx, r14"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A962A,sceNgs2RackGetVoiceHandle,gpr_slot_3_extra,rcx,0x1A9613,"test    rcx, rcx"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A962A,sceNgs2RackGetVoiceHandle,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A962A,sceNgs2RackGetVoiceHandle,gpr_slot_5_extra,r9,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A964D,sceNgs2VoiceControl,voice,rdi,0x1A962F,"mov     rdi, [rbp+var_48]"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A964D,sceNgs2VoiceControl,parameter_chain,rsi,0x1A9633,"mov     rsi, r15"
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A964D,sceNgs2VoiceControl,gpr_slot_2_extra,rdx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A964D,sceNgs2VoiceControl,gpr_slot_3_extra,rcx,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A964D,sceNgs2VoiceControl,gpr_slot_4_extra,r8,,
+sub_1A8E90,voice_lifecycle_peak_meter_candidate,NGS2_API_CALL,0x1A964D,sceNgs2VoiceControl,gpr_slot_5_extra,r9,,
